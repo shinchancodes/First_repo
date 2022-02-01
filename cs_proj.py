@@ -29,7 +29,7 @@ def prnt(rec,heading):
 def runpy(ch=9):
     print('''
 -----------------------------------------------------------
-Which operation do you wat to perform ?
+Which operation do you want to perform ?
 
 1. Write
 2. Read
@@ -78,7 +78,7 @@ def write():
     ch='y'
     while ch in 'Yy':
         roll=int(input('Enter Admission no.:'))
-        name=input('Enter Name(max 13 characters):')
+        name=input('Enter Name:')
         sec=input('Enter Section:')
         mrk=int(input("Enter marks in percent(0 to 100):"))
         while True:
@@ -115,7 +115,7 @@ def append():
     ch='y'
     while ch in 'Yy':
         roll=int(input('Enter Admission no.:'))
-        name=input('Enter Name(max 13 character):')
+        name=input('Enter Name:')
         sec=input('Enter Section:')
         mrk=int(input("Enter marks in percent(0 to 100):"))
         while True:
@@ -334,7 +334,7 @@ ch=int(input('How would you like to login..\n\n1.Administrator \n2.Student \n\nE
 res=0
 if ch==1:
     while res==0:
-        pas=input("Enter Administrator Password :")
+        pas=input("Enter Administrator Password (cvsec5):")
         if pas=="cvsec5":
             while True:
                 runpy()
